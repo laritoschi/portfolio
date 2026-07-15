@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n-key="page.title.case-askflow">AskFlow Agents • Case Completo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html">Lari</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" data-i18n-key="nav.home">Início</a>
+          <a href="case-studies.html" class="active" data-i18n-key="nav.case-studies">Casos de estudo</a>
+          <a href="about.html" data-i18n-key="nav.about">Sobre (CV)</a>
+          <a href="contact.html" data-i18n-key="nav.contact">Contato</a>
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+          </div>
+        </nav>
+      </header>
+
+      <main class="case-study-page">
+        <a class="back-link" href="case-studies.html">
+          <span aria-hidden="true">←</span>
+          <span data-i18n-key="case.back">Voltar</span>
+        </a>
+        <section class="case-hero">
+          <div>
+            <p class="section-label" data-i18n-key="case.hero.label.full">Case completo</p>
+            <h1 data-i18n-key="case.askflow.full.hero.title">AskFlow Agents: from personalization to efficiency.</h1>
+            <p class="case-subtitle" data-i18n-key="case.askflow.full.hero.subtitle">A complete walkthrough of the redesign strategy, discovery process, and business impact behind the Agent Library experience.</p>
+          </div>
+          <div class="hero-visual case-visual" aria-hidden="true">
+            <div class="mock-browser large">
+              <div class="mock-browser-top"><span></span><span></span><span></span></div>
+              <div class="mock-browser-body case-body">
+                <div class="mock-card large">
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/case-askflow-1200.avif 1200w, assets/images/case-askflow-800.avif 800w, assets/images/case-askflow-400.avif 400w" sizes="(max-width:1200px) 100vw, 1200px">
+                    <source type="image/webp" srcset="assets/images/case-askflow-1200.webp 1200w, assets/images/case-askflow-800.webp 800w, assets/images/case-askflow-400.webp 400w">
+                    <img src="assets/images/case-askflow-800.jpg" alt="AskFlow visual" loading="lazy">
+                  </picture>
+                </div>
+                <div class="mock-card">
+                  <picture>
+                    <source type="image/avif" srcset="assets/images/case-askflow-800.avif 800w, assets/images/case-askflow-400.avif 400w" sizes="(max-width:800px) 100vw, 800px">
+                    <source type="image/webp" srcset="assets/images/case-askflow-800.webp 800w, assets/images/case-askflow-400.webp 400w">
+                    <img src="assets/images/case-askflow-400.jpg" alt="AskFlow detail" loading="lazy">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <div class="section-heading">
+            <p class="section-label">Resumo executivo</p>
+            <h2>The core challenge was to move users from a technically intimidating builder to a reassuring and fast activation path.</h2>
+          </div>
+          <div class="two-col">
+            <div>
+              <h3>Problema</h3>
+              <p>Even though the tool was powerful, the drag-and-drop builder created too much friction for non-technical users. Activation dropped and support demand grew.</p>
+            </div>
+            <div>
+              <h3>Estratégia</h3>
+              <p>We identified common baseline patterns across workflows and translated them into a curated library of ready-to-use agents that reduced the need for manual setup.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="case-section">
+          <div class="section-heading">
+            <p class="section-label">Impacto</p>
+            <h2>The redesign improved activation speed, reduced support friction, and made the product feel lighter and more approachable.</h2>
+          </div>
+          <div class="outcomes-grid">
+            <article class="metric-card large">
+              <h3>+40%</h3>
+              <p>increase in monthly activations.</p>
+            </article>
+            <article class="metric-card large">
+              <h3>Under 1 min</h3>
+              <p>setup time per agent.</p>
+            </article>
+            <article class="metric-card large">
+              <h3>89%</h3>
+              <p>of clients generated sales within 30 days using the library.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="lang.js"></script>
+  </body>
+</html>

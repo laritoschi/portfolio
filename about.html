@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n-key="page.title.about">About | Lari S.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html">Lari</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" data-i18n-key="nav.home">Início</a>
+          <a href="case-studies.html" data-i18n-key="nav.case-studies">Casos de estudo</a>
+          <a href="about.html" class="active" data-i18n-key="nav.about">Sobre (CV)</a>
+          <a href="contact.html" data-i18n-key="nav.contact">Contato</a>
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+            <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+          </div>
+        </nav>
+      </header>
+
+      <main class="about-page">
+        <section class="about-intro">
+          <div>
+            <p class="section-label" data-i18n-key="about.intro.label">About</p>
+            <h1 data-i18n-key="about.intro.title">Product designer with a systems lens and a human-centered approach.</h1>
+            <p data-i18n-key="about.intro.text">
+              Graduated in Architecture from USP with a focus on computing. With 5+ years of UX and product experience, I bridge strategy, design, and implementation to build intuitive products that feel simple and scale well.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3 data-i18n-key="about.profile.title">Currently based in</h3>
+            <p data-i18n-key="about.profile.location">Taubaté, SP</p>
+            <p data-i18n-key="about.profile.description">Lives with her husband and 4 cats. Loves psychology books, good coffee, and crisp micro-interactions.</p>
+          </div>
+        </section>
+
+        <section class="cv-grid">
+          <div class="cv-main">
+            <div class="cv-block">
+              <h2 data-i18n-key="about.experience.title">Experience</h2>
+              <div class="timeline-item">
+                <div>
+                  <h3>Product Designer</h3>
+                  <p class="muted">Asksuite • 2025</p>
+                </div>
+                <p>Led the redesign of AskFlow Agents, improving activation, simplifying setup, and reducing support friction for hospitality clients.</p>
+              </div>
+              <div class="timeline-item">
+                <div>
+                  <h3>Senior Product & UX Designer</h3>
+                  <p class="muted">Hidden company • 2024</p>
+                </div>
+                <p>Led dashboard and CRM design work focused on retail data quality, enabling cross-functional decision-making and stronger conversion strategies.</p>
+              </div>
+              <div class="timeline-item">
+                <div>
+                  <h3>Product Designer</h3>
+                  <p class="muted">Blip • 2022</p>
+                </div>
+                <p>Designed an analytics dashboard for complex usage billing metrics, helping operational teams understand product usage faster and more clearly.</p>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h2 data-i18n-key="about.education.title">Education & Certifications</h2>
+              <div class="timeline-item">
+                <div>
+                  <h3>Bachelor of Architecture</h3>
+                  <p class="muted">University of São Paulo (USP)</p>
+                </div>
+                <p>Focused on computation, spatial systems, and interdisciplinary problem-solving.</p>
+              </div>
+              <div class="timeline-item">
+                <div>
+                  <h3>Continuous learning</h3>
+                  <p class="muted">Research, psychology, and product design</p>
+                </div>
+                <p>Ongoing exploration in behavioral psychology, systems thinking, and modern product practice.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cv-sidebar">
+            <div class="cv-block">
+              <h2 data-i18n-key="about.skills.title">Core Skills</h2>
+              <ul class="skill-list">
+                <li>Product Strategy</li>
+                <li>Interaction Design</li>
+                <li>Usability Testing</li>
+                <li>Design Systems</li>
+                <li>Data & Metrics Analysis</li>
+                <li>Cross-functional Leadership</li>
+              </ul>
+            </div>
+            <div class="cv-block">
+              <h2 data-i18n-key="about.tools.title">Tools</h2>
+              <p>Figma, FigJam, Notion, Miro, Jira, analytics dashboards, and lightweight prototyping.</p>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+    <script src="lang.js"></script>
+  </body>
+</html>
