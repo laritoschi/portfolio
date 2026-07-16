@@ -51,7 +51,7 @@ img {
 
 .site-nav {
   display: flex;
-  gap: 12px;
+  gap: 24px;
   flex-wrap: wrap;
   align-items: center;
 }
