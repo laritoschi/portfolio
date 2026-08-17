@@ -1,5 +1,6 @@
 (function () {
   const modalId = 'shared-modal';
+  const imageLightboxId = 'image-lightbox';
   const defaultEmail = 'larissaftoschi@gmail.com';
 
   function createModalMarkup() {
@@ -103,6 +104,50 @@
     modal.setAttribute('aria-hidden', 'true');
   }
 
+  function createImageLightboxMarkup() {
+    if (document.getElementById(imageLightboxId)) {
+      return document.getElementById(imageLightboxId);
+    }
+
+    const lightbox = document.createElement('div');
+    lightbox.id = imageLightboxId;
+    lightbox.className = 'image-lightbox';
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightbox.innerHTML = `
+      <div class="image-lightbox-backdrop" data-image-lightbox-close></div>
+      <div class="image-lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="image-lightbox-title">
+        <button class="image-lightbox-close" type="button" aria-label="Fechar imagem" data-image-lightbox-close>×</button>
+        <img id="image-lightbox-image" src="" alt="" />
+        <p id="image-lightbox-title" class="image-lightbox-caption"></p>
+      </div>
+    `;
+
+    document.body.appendChild(lightbox);
+    return lightbox;
+  }
+
+  function openImageLightbox(trigger) {
+    const lightbox = createImageLightboxMarkup();
+    const image = lightbox.querySelector('#image-lightbox-image');
+    const caption = lightbox.querySelector('#image-lightbox-title');
+    const src = trigger.getAttribute('data-lightbox-src') || trigger.querySelector('img')?.getAttribute('src') || '';
+    const alt = trigger.getAttribute('data-lightbox-alt') || trigger.querySelector('img')?.getAttribute('alt') || '';
+    const text = trigger.getAttribute('data-lightbox-caption') || '';
+
+    image.src = src;
+    image.alt = alt;
+    caption.textContent = text;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+  }
+
+  function closeImageLightbox() {
+    const lightbox = document.getElementById(imageLightboxId);
+    if (!lightbox) return;
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+  }
+
   document.addEventListener('click', function (event) {
     const trigger = event.target.closest('[data-open-modal]');
     if (trigger) {
@@ -117,14 +162,26 @@
       return;
     }
 
+    const imageTrigger = event.target.closest('[data-lightbox-trigger]');
+    if (imageTrigger) {
+      event.preventDefault();
+      openImageLightbox(imageTrigger);
+      return;
+    }
+
     if (event.target.matches('[data-modal-close]')) {
       closeModal();
+    }
+
+    if (event.target.matches('[data-image-lightbox-close]')) {
+      closeImageLightbox();
     }
   });
 
   document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
       closeModal();
+      closeImageLightbox();
     }
   });
 

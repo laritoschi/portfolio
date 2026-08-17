@@ -1,0 +1,16 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2 desc2">
+  <title id="title2">Carousel placeholder 2</title>
+  <desc id="desc2">A stylized placeholder showing a visual exploration layout with blue and orange tones</desc>
+  <defs>
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7dc8ff" />
+      <stop offset="100%" stop-color="#ff8a6b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#grad2)" rx="32" />
+  <rect x="120" y="120" width="420" height="340" rx="24" fill="rgba(255,255,255,0.28)" />
+  <rect x="720" y="160" width="340" height="260" rx="24" fill="rgba(255,255,255,0.22)" />
+  <circle cx="340" cy="520" r="70" fill="rgba(255,255,255,0.18)" />
+  <text x="135" y="250" fill="white" font-family="Inter, sans-serif" font-size="62" font-weight="700">Product visuals</text>
+  <text x="135" y="330" fill="rgba(255,255,255,0.88)" font-family="Inter, sans-serif" font-size="30">A refined placeholder for a marketing or case illustration.</text>
+</svg>

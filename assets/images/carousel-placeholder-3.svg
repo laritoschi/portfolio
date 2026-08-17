@@ -1,0 +1,17 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title3 desc3">
+  <title id="title3">Carousel placeholder 3</title>
+  <desc id="desc3">A stylized placeholder showing a layered dashboard concept with purple and blue details</desc>
+  <defs>
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#886aff" />
+      <stop offset="100%" stop-color="#32c4ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#grad3)" rx="32" />
+  <rect x="180" y="180" width="260" height="200" rx="20" fill="rgba(255,255,255,0.18)" />
+  <rect x="520" y="220" width="520" height="240" rx="24" fill="rgba(255,255,255,0.2)" />
+  <rect x="620" y="320" width="200" height="20" rx="10" fill="rgba(255,255,255,0.6)" />
+  <rect x="620" y="360" width="320" height="20" rx="10" fill="rgba(255,255,255,0.6)" />
+  <text x="180" y="450" fill="white" font-family="Inter, sans-serif" font-size="58" font-weight="700">Dashboard concept</text>
+  <text x="180" y="520" fill="rgba(255,255,255,0.86)" font-family="Inter, sans-serif" font-size="30">Placeholder imagery for an interface or analytics preview.</text>
+</svg>
