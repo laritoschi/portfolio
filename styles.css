@@ -13,8 +13,8 @@
   --extramuted: #9c9994;
   --border: rgba(23, 23, 23, 0.1);
   --accent: #e782a9;
-  --accent2: #b42e5b;
-  --accent3: #e6a121;
+  --accent-2: #b42e5b;
+  --accent-3: #e6a121;
   --shadow: 0 20px 40px rgba(23, 23, 23, 0.08);
   --extrashadow: 0 28px 60px rgba(23, 23, 23, 0.12);
 }
@@ -390,6 +390,25 @@ h4 {
   text-decoration: none;
   font-weight: 700;
   line-height: 250%;
+}
+
+.text-link:hover {
+  text-decoration:underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.text-link-case {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 250%;
+}
+
+.text-link-case:hover {
+  text-decoration:underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 .text-link:hover {
@@ -828,7 +847,7 @@ h4 {
 .timeline2 article h3 {
   font-size: 1.1rem;
   margin-bottom: 6px;
-  color: var(--accent2);
+  color: var(--accent-2);
 }
 
 .comparison-grid {
