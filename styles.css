@@ -13,8 +13,8 @@
   --extramuted: #9c9994;
   --border: rgba(23, 23, 23, 0.1);
   --accent: #e782a9;
-  --accent-2: #b42e5b;
-  --accent-3: #e6a121;
+  --accent2: #b42e5b;
+  --accent3: #e6a121;
   --shadow: 0 20px 40px rgba(23, 23, 23, 0.08);
   --extrashadow: 0 28px 60px rgba(23, 23, 23, 0.12);
 }
@@ -431,7 +431,7 @@ h4 {
 
 .carousel {
   position: relative;
-  border-radius: 28px;
+  border-radius: 16px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.9);
@@ -809,7 +809,27 @@ h4 {
   margin-top: 18px;
 }
 
+.timeline2 {
+  display: inline-flex;
+  gap: 18px;
+  margin-top: 18px;
+}
 
+.timeline2 article {
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(255,255,255,0.9);
+  border-radius: 8px;
+  padding: 12px;
+  gap: 8px;
+  box-shadow: var(--shadow);
+  font-color: var(--muted);
+}
+
+.timeline2 article h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: var(--accent2);
+}
 
 .comparison-grid {
   display: grid;
@@ -830,6 +850,17 @@ h4 {
   flex-wrap: wrap;
   align-content: flex-start;
 }
+
+.metric-card.with-icon2 {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+}
+
+
+
 
 .metric-card .card-icon {
   font-family: 'Material Icons';
@@ -1143,8 +1174,8 @@ h4 {
   }
 
   .carousel-button {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
   }
 
   .site-header {
