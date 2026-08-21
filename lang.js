@@ -333,21 +333,21 @@
       'nav.about': 'About (CV)',
       'nav.contact': 'Contact',
       'case.back': 'All cases',
-      'page.title.home': 'Lari Toschi | UX & Product Designer',
+      'page.title.home': 'Lari Toschi ✷ product & ux designer 𖹭',
       'page.title.case-studies': 'Case Studies | Lari Toschi',
       'page.title.about': 'About | Lari Toschi',
       'page.title.contact': 'Contact | Lari Toschi',
       'page.title.case-study': 'Case Study | Lari Toschi',
-      'page.title.case-study-askflow': 'AskFlow Agents | Real case',
-      'page.title.case-study-retail': 'Retail Data | Case Study',
-      'page.title.case-study-blip': 'Blip | Real case',
-      'page.title.case-askflow': 'AskFlow Agents • Full Case',
-      'page.title.case-retail': 'Retail Data • Full Case',
-      'page.title.case-blip': 'Blip • Full Case',
+      'page.title.case-study-askflow': 'AskFlow Agents ✷ Real case',
+      'page.title.case-study-retail': 'Retail Data ✷ Case Study',
+      'page.title.case-study-blip': 'Blip ✷ Case',
+      'page.title.case-askflow': 'AskFlow Agents ✷ Full Case',
+      'page.title.case-retail': 'Retail Data ✷ Case study',
+      'page.title.case-blip': 'Blip ✷ Case',
       'hero.eyebrow': 'Product Designer • Service Design • Visual & UI Design',
       'hero.title': 'Hi, I’m Lari!',
-      'hero.text1': 'I simplify complex B2B products for real users.',
-      'hero.text2': 'From interface details to high-level strategy, I bridge the gap with a product design perspective.',
+      'hero.text1': 'I simplify complex B2B products for real users 𖹭',
+      'hero.text2': 'From interface details to high-level strategy ✷ end-to-end UX & UI design',
       'hero.cta.primary': 'View featured work',
       'hero.cta.secondary': 'Let’s talk',
       'home.about.label': 'About',
@@ -394,8 +394,9 @@
 
       /* ABOUT PAGE */
       'about.intro.label': 'About',
-      'about.intro.title': 'From interface details to high-level strategy, I bridge the gap with a multidisciplinary perspective.',
-      'about.intro.text': 'Architecting end-to-end UX/UI solutions for complex products with multidisciplinary teams',
+      'about.intro.title1': 'from interface details to high-level strategy,',
+      'about.intro.title2': 'I navigate product complexity with whimsy 𖹭',
+      'about.intro.text': 'end-to-end UX/UI solutions for complex products ✷ from discovery to delivery',
 
       'about.profile.title': 'Find me (almost) everywhere',
       'about.profile.location': 'Taubaté, SP, Brazil',
@@ -406,11 +407,11 @@
       'about.story.p2': 'In my most recent role at Omnichat, I owned UX for Whizz (Post-Sales), an AI agent platform for e-commerce. I maintained direct contact with clients to uncover operational friction and worked closely with technical and engineering teams to translate API integrations and multi-step AI automations into clear, effortless user journeys.',
 
       'about.pillars.title': 'How I approach design',
-      'about.pillars.p1.title': 'Tackling Systemic Complexity',
+      'about.pillars.p1.title': 'Complexity and ambiguity = my favorite challenges',
       'about.pillars.p1.text': 'I specialize in turning dense data, backend logic, and API-driven workflows into clear, human-friendly interfaces.',
-      'about.pillars.p2.title': 'Direct Client & Tech Alignment',
+      'about.pillars.p2.title': 'Communication and team work are my strongest features',
       'about.pillars.p2.text': 'I bridge user needs with engineering constraints by staying close to customers and speaking fluent tech with developers.',
-      'about.pillars.p3.title': 'Data-Informed Iteration',
+      'about.pillars.p3.title': 'My design flourish when I have access to data',
       'about.pillars.p3.text': 'I combine qualitative research, usability testing (Maze), and analytics (Hotjar, Mixpanel) to validate hypotheses and drive real business impact.',
 
       'about.exp.title': 'Past experiences',
@@ -535,6 +536,13 @@
       'case.askflow.open.title': 'Access full case AskFlow',
       'case.askflow.open.description': 'Coming soon!',
       
+      'case.askflow.ending.label': '',
+      'case.askflow.ending.heading': '',
+      'case.askflow.ending.text': '',
+      'case.askflow.article.1': '',
+      'case.askflow.article.2': '',
+      'case.askflow.article.3': '',
+
       /*RETAIL*/
       'case.retail.hero.title': 'Retail data triangulation: turning checkout signals into a better CRM strategy.',
       'case.retail.hero.subtitle': 'How designing a clearer analytics surface helped teams identify quality issues and improve decision-making.',
@@ -598,9 +606,13 @@
       'case.blip.outcome.3.title': 'Key insight for future iterations' ,
       'case.blip.outcome.3.text': 'Clients with lower data maturity were more likely to still struggle with understanding the billing model — signaling this wasnt a one-and-done problem.',
       
-      'case.blip.external.1.title': 'Access Help Center article',
-      
-      
+      'case.blip.ending.label': 'Reflection & other links',
+      'case.blip.ending.heading': 'This work reinforces the need of research and validation to create a real end-to-end experience for users',
+      'case.blip.ending.text': 'This is one of my most complete and end-to-end cases, envolving research with clients and internal collaborators. Also, learning about the varios depths of data literacy in B2B ambiance was extremely valuable for me as designer.',
+      'case.blip.article.1': 'Help center Article: How to access the Consumption Report',
+      'case.blip.article.2': 'Beta: How to access and users feedback',
+      'case.blip.article.3': 'Help center Article: Consumption report how to use it',
+
       /* RETAIL */
       'case.retail.metric.timeline.text': 'compressed timeline for a high-stakes design sprint.',
       'case.retail.metric.crunch.text': 'of focused crunch work to validate and deliver the experience.',
