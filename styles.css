@@ -308,6 +308,7 @@
 .carousel-indicator {
   width: 10px;
   height: 10px;
+  padding: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.9);
@@ -1437,6 +1438,7 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
   font-family: 'Overpass', sans-serif;
   background: linear-gradient(135deg, var(--bg), #fcfbf7 55%, #f5efff);
   color: var(--text);
@@ -1526,4 +1528,10 @@ img {
   * { transition: none !important; }
   .tools-carousel__track { animation: none; }
   .cursor { display: none; }
+}
+
+.fw-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

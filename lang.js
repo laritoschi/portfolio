@@ -381,7 +381,7 @@
       'home.featured.card.retail.pill': 'Analytics case study',
       'home.featured.card.retail.title': 'Data triangulation for higher-converting CRM strategy',
       'home.featured.card.retail.desc': 'Shaped a retail dashboard to unify checkout signals and quality checks into a clearer decision surface.',
-      'home.featured.card.retail.meta1': 'Design hackaton in 1 week',
+      'home.featured.card.retail.meta1': 'Design hackathon in 1 week',
       'home.featured.card.retail.meta2': 'Fast paced case',
       'home.featured.card.retail.meta3': 'Dashboard and drill-down data visualization',
       'home.contact.label': 'Let’s connect',
