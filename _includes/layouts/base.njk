@@ -20,7 +20,20 @@
 
   <body>
     <div id="base-wrapper">
-      {% include 'components/header.njk' %}
+      <header class="site-header">
+        <a class="brand" href="index.html">Lari Toschi</a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          {% for item in navigation.header %}
+            <a href="{{ item.url }}" class="{{ "active" if header == item.id }}">{{ item.label }}</a>
+          {% endfor %}
+
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-btn active" aria-label="Português">PT</button>
+            <button class="lang-btn" aria-label="English">EN</button>
+          </div>
+        </nav>
+      </header>
 
       {{ content | safe }}
     </div>
