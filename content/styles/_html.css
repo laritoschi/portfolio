@@ -1,0 +1,56 @@
+@import './_variables.css';
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  font-family: var(--font-brand);
+  line-height: 1.05;
+  margin: 0 0 8px;
+}
+
+h2 {
+  --h2-font-family: var(--font-brand);
+  --h2-font-size: 1.8rem;
+
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  margin: 0;
+  margin-bottom: 16px;
+
+  &.sans {
+    --h2-font-family: inherit;
+    --h2-font-size: 1.5em;
+  }
+}
+
+h4 {
+  margin: 0;
+  font-family: var(--font-brand);
+  font-size: 1.5rem;
+}
+
+h5 {
+  --h5-font-weight: 700;
+  --h5-color: var(--color-accent1);
+
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
+  font-weight: var(--h5-font-weight);
+  color: var(--h5-color);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.link {
+  color: var(--color-accent2);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 250%;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+}

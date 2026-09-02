@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="{{ lang }}" dir="{{ dir }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,17 +25,19 @@
 
         <nav class="site-nav" aria-label="Primary navigation">
           {% for item in navigation.header %}
-            <a href="{{ item.url }}" class="{{ "active" if header == item.id }}">{{ item.label }}</a>
+            <a href="{{ item.url }}" class="link-nav {{ "active" if header == item.id }}">{{ ['header.nav.', item.id] | join | t }}</a>
           {% endfor %}
 
           <div class="lang-switcher" aria-label="Language switcher">
-            <button class="lang-btn active" aria-label="Português">PT</button>
-            <button class="lang-btn" aria-label="English">EN</button>
+            <a href="/" class="link-lang {{ "active" if lang == "en" }}" aria-label="English">EN</a>
+            <a href="/pt" class="link-lang {{ "active" if lang == "pt" }}" aria-label="Português">PT</a>
           </div>
         </nav>
       </header>
 
-      {{ content | safe }}
+      <main>
+        {{ content | safe }}
+      </main>
     </div>
   </body>
 </html>

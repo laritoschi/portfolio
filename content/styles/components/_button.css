@@ -1,0 +1,31 @@
+@import '../_variables.css';
+
+.btn {
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+
+  &.primary {
+    color: var(--color-surface);
+    background: linear-gradient(90deg, var(--color-accent1), var(--color-accent2));
+    box-shadow: var(--shadow);
+    border: none;
+  }
+
+  &.secondary {
+    color: var(--color-text);
+    background: var(--color-surface);
+    border: none;
+  }
+
+  &:hover {
+    box-shadow: var(--shadow-extra);
+  }
+}

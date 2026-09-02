@@ -1,6 +1,9 @@
 @import './_variables.css';
+@import './_html.css';
 
+@import './components/_button.css';
 @import './components/_header.css';
+@import './components/_pill.css';
 
 @import './pages/_home.css';
 

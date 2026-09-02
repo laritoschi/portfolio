@@ -21,3 +21,6 @@ _site/
 # Ignore test files
 .cache
 test/stubs-layout-cache/_includes/*.js
+
+# Ignore WSL temp files
+*.Identifier

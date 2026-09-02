@@ -5,9 +5,19 @@
   --color-text: #171717;
   --color-bg: #f5f4f1;
   --color-bg-translucent: rgba(255,255,255,0.7);
+  --color-bg-pill: rgba(236, 192, 236, 0.301);
   --color-muted: #5f5b56;
   --color-border: rgba(23, 23, 23, 0.1);
+  --color-border2: rgba(23, 23, 23, 0.2);
   --color-accent1: #e782a9;
   --color-accent2: #b42e5b;
   --color-accent3: #e6a121;
+  --color-surface: #fffdf9;
+  --color-surface2: #f2efe8;
+  --color-surface3: rgba(255, 255, 255, 0.82);
+  --color-muted-extra: #9c9994;
+
+  --shadow: 0 20px 40px rgba(23, 23, 23, 0.08);
+  --shadow-extra: 0 28px 60px rgba(23, 23, 23, 0.12);
+  --shadow-focus: 0 28px 60px rgba(23,23,23,0.18);
 }

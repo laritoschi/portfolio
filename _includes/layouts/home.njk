@@ -1,0 +1,84 @@
+---
+layout: layouts/base.njk
+header: home
+---
+
+<section class="hero">
+  <div>
+    <h5>{{ 'home.hero.eyebrow' | t }}</h5>
+    <h1>{{ 'home.hero.title' | t }}</h1>
+    <p class="hero-subtitle">{{ 'home.hero.subtitle' | t }}</p>
+    <p class="hero-text">{{ 'home.hero.text' | t }}</p>
+
+    <br/>
+
+    <div class="hero-actions">
+      <a class="btn primary" href="/cases">{{ 'home.hero.btn.cases' | t }}</a>
+      <a class="btn secondary" href="/contact">{{ 'home.hero.btn.contact' | t }}</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="mock-browser">
+      <div class="mock-browser-top">
+        <span></span> <span></span> <span></span>
+      </div>
+      <div class="mock-browser-body">
+        <div class="mock-card large"> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-teaser">
+  <div>
+    <h5>{{ 'home.about.label' | t }}</h5>
+    <h2 class="sans">{{ 'home.about.title' | t }}</h2>
+  </div>
+
+  <div class="about-text">
+    <p>{{ 'home.about.text' | t }}</p>
+    <br/>
+    <a class="link" href="/about">{{ 'home.about.link' | t }}</a>
+  </div>
+</section>
+
+<section class="featured-work">
+  <div class="featured-head">
+    <div>
+      <h5>{{ 'home.featured.label' | t }}</h5>
+      <h2>{{ 'home.featured.title' | t }}</h2>
+    </div>
+    <a class="link" href="/cases">{{ 'home.featured.link' | t }}</a>
+  </div>
+  
+  <div class="featured-grid">
+    {% for case in collections[['cases-', lang ] | join] %}
+      <a class="featured-card" href="{{ case.url }}">
+        <div class="card-visual askflow" style="background-image: url('{{ case.data.homeThumbnail }}');"></div>
+        
+        <div class="card-content">
+          {% pill case.data.homePill %}
+
+          <h3>{{ case.data.title }}</h3>
+          <p>{{ case.data.description }}</p>
+          <ul>
+            {% for item in case.data.homeHighlights %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="contact-teaser">
+  <div>
+    <h5>{{ 'home.contact.label' | t }}</h5>
+    <h4>{{ 'home.contact.title' | t }}</h4>
+  </div>
+
+  <a class="btn primary" href="/contact">{{ 'home.contact.link' | t }}</a>
+</section>

@@ -1,8 +1,8 @@
 {
   "header": [
-    { "id": "home", "label": "Home", "url": "/" },
-    { "id": "cases", "label": "Case Studies", "url": "/cases" },
-    { "id": "about", "label": "About (CV)", "url": "/about" },
-    { "id": "contact", "label": "Contact", "url": "/contact" }
+    { "id": "home", "url": "/" },
+    { "id": "cases", "url": "/cases" },
+    { "id": "about", "url": "/about" },
+    { "id": "contact", "url": "/contact" }
   ]
 }
