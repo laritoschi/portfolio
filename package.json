@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laritoschi/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laritoschi/portfolio/issues"
+  },
+  "homepage": "https://github.com/laritoschi/portfolio#readme",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11tyrocks/eleventy-plugin-lightningcss": "^1.6.0"
+  }
+}

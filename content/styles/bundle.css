@@ -1,0 +1,24 @@
+@import './_variables.css';
+
+@import './components/_header.css';
+
+@import './pages/_home.css';
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-base);
+  background: linear-gradient(135deg, var(--color-bg), #fcfbf7 55%, #f5efff);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#base-wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 24px 56px;
+
+  @media (max-width: 650px) {
+    padding: 16px 16px 40px;
+  }
+}
