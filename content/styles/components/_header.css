@@ -65,10 +65,12 @@
       border-radius: 999px;
       cursor: pointer;
       text-decoration: none;
+      text-transform: uppercase;
 
       &.active {
         background: linear-gradient(90deg, var(--color-accent1), var(--color-accent2));
         color: var(--color-surface);
+        cursor: default;
       }
     }
   }

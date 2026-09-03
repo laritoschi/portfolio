@@ -5,6 +5,7 @@
 @import './components/_header.css';
 @import './components/_pill.css';
 
+@import './pages/_cases.css';
 @import './pages/_home.css';
 
 body {

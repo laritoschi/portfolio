@@ -23,4 +23,8 @@ export default {
   'home.contact.label': 'Let\'s connect',
   'home.contact.title': 'Open for freelancing and remote contract opportunities in UX, UI and product design.',
   'home.contact.link': 'Contact me',
+
+  'cases.page.label': 'Case Studies',
+  'cases.page.title': 'Selected work at the intersection of clarity, strategy, and measurable growth.',
+  'cases.page.text': 'Each project explores a different product challenge, from onboarding redesign to data-heavy dashboards and operational tooling.'
 }

@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+---
+
+<section>
+  <h5>{{ 'cases.page.label' | t }}</h5>
+  <h1 class='sans'>{{ 'cases.page.title' | t }}</h1>
+  <p>{{ 'cases.page.text' | t }}</p>
+</section>
+
+<section class="case-list">
+  {% for case in collections[['cases-', lang ] | join] %}
+    <div class="case-card">
+      <a class="case-content" href="{{ case.url }}">
+        <div class="case-image" style="background-image: url('{{ case.data.thumbnail }}');"></div>
+
+        <div>
+          {% pill case.data.listPill %}
+          <h3>{{ case.data.listTitle }}</h3>
+          <p>{{ case.data.listDescription }}</p>
+          <div class="case-pills">
+            {% for feature in case.data.listFeatures %}
+              {% pill feature, 'secondary' %}
+            {% endfor %}
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,48 @@
+@import '../_variables.css';
+
+.case-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+
+  .case-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 22px;
+    align-items: start;
+    background: var(--color-surface3);
+    border: 1px solid var(--color-surface);
+    border-radius: 28px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-extra);
+    }
+
+    .case-content {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 22px;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+
+      .case-image {
+        height: 180px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .case-pills {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 12px;
+      }
+    }
+  }
+}

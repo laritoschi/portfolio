@@ -23,4 +23,8 @@ export default {
   'home.contact.label': 'Vamos conversar',
   'home.contact.title': 'Aberta para freelancing e oportunidades remotas em UX, UI e design de produto.',
   'home.contact.link': 'Entre em contato',
+
+  'cases.page.label': 'Cases de estudo',
+  'cases.page.title': 'Trabalhos selecionados na interseção entre clareza, estratégia e crescimento mensurável.',
+  'cases.page.text': 'Cada projeto explora um desafio diferente de produto, desde redesign de onboarding até dashboards focados em dados e ferramentas operacionais.'
 }

@@ -1,3 +1,9 @@
+---
+allLang:
+  - en
+  - pt
+---
+
 <!DOCTYPE html>
 
 <html lang="{{ lang }}" dir="{{ dir }}">
@@ -21,16 +27,23 @@
   <body>
     <div id="base-wrapper">
       <header class="site-header">
-        <a class="brand" href="index.html">Lari Toschi</a>
+        <a class="brand" href="{{ '/' | keepLang }}">Lari Toschi</a>
 
         <nav class="site-nav" aria-label="Primary navigation">
           {% for item in navigation.header %}
-            <a href="{{ item.url }}" class="link-nav {{ "active" if header == item.id }}">{{ ['header.nav.', item.id] | join | t }}</a>
+            <a href="{{ item.url | keepLang }}" class="link-nav {{ "active" if header == item.id }}">{{ ['header.nav.', item.id] | join | t }}</a>
           {% endfor %}
 
           <div class="lang-switcher" aria-label="Language switcher">
-            <a href="/" class="link-lang {{ "active" if lang == "en" }}" aria-label="English">EN</a>
-            <a href="/pt" class="link-lang {{ "active" if lang == "pt" }}" aria-label="Português">PT</a>
+            {% for l in allLang %}
+              {% if lang == l %}
+                <span class="link-lang active" aria-label="{{ l }}">{{ l }}</span>
+              {% else %}
+                <a href="{{ page.url | switchLang }}" class="link-lang" aria-label="{{ l }}">
+                  {{ l }}
+                </a>
+              {% endif %}
+            {% endfor %}
           </div>
         </nav>
       </header>

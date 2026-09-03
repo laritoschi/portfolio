@@ -1,3 +1,3 @@
-export default function(label) {
-  return `<span class="pill">${label}</span>`;
+export default function(label, type = '') {
+  return `<span class="pill ${type}">${label}</span>`;
 }

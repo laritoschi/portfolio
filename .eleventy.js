@@ -1,6 +1,8 @@
 import lightningCSS from "@11tyrocks/eleventy-plugin-lightningcss";
 import { I18nPlugin } from "@11ty/eleventy";
 
+import switchLangFilter from './_plugins/switch-lang-filter.js';
+import keepLangFilter from './_plugins/keep-lang-filter.js';
 import l10nFilter from './_plugins/l10n-filter.js';
 import pillShortCode from './_plugins/pill-shortcode.js';
 
@@ -11,11 +13,13 @@ export default async function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("assets");
 
+	eleventyConfig.addFilter('keepLang', keepLangFilter);
+	eleventyConfig.addFilter('switchLang', switchLangFilter);
 	eleventyConfig.addFilter('t', l10nFilter);
 	eleventyConfig.addShortcode('pill', pillShortCode);
 
 	eleventyConfig.addPlugin(lightningCSS);
-	eleventyConfig.addPlugin(I18nPlugin, { defaultLanguage: 'en' });
+	eleventyConfig.addPlugin(I18nPlugin, { defaultLanguage: 'en', errorMode: 'never' });
 
 	return {
 		dir: {
