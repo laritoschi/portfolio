@@ -55,6 +55,18 @@ h5 {
   margin-bottom: 12px;
 }
 
+h6 {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-muted);
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 62px;
+  margin-bottom: 4px;
+}
+
 .link {
   color: var(--color-accent2);
   text-decoration: none;
@@ -66,4 +78,27 @@ h5 {
     text-decoration-thickness: 2px;
     text-underline-offset: 4px;
   }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+blockquote {
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, rgba(255,77,145,0.12), rgba(124,110,255,0.08));
+  border: 1px solid var(--color-surface2);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow);
 }

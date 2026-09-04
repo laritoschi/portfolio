@@ -26,5 +26,10 @@ export default {
 
   'cases.page.label': 'Case Studies',
   'cases.page.title': 'Selected work at the intersection of clarity, strategy, and measurable growth.',
-  'cases.page.text': 'Each project explores a different product challenge, from onboarding redesign to data-heavy dashboards and operational tooling.'
+  'cases.page.text': 'Each project explores a different product challenge, from onboarding redesign to data-heavy dashboards and operational tooling.',
+
+  'caseFull.btn.back': 'All cases',
+  'caseFull.page.eyebrow': 'Case summary',
+  'caseFull.btn.contact': 'Let\'s talk',
+  'caseFull.btn.more': 'Read other cases',
 }

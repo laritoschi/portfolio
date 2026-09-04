@@ -108,13 +108,6 @@
   background: linear-gradient(135deg, rgba(255,77,145,0.15), rgba(125,200,255,0.4));
 }
 
-.bullet-list {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
-  line-height: 1.8;
-}
-
 .button {
   font: inherit;
   cursor: pointer;
@@ -385,7 +378,6 @@
 }
 
 .cv-block,
-.metric-card,
 .feature-card,
 .comparison-card,
 .insight-box {
@@ -548,7 +540,6 @@
   margin-bottom: 16px;
 }
 
-.case-hero,
 .contact-card {
   display: grid;
   gap: 32px;
@@ -575,7 +566,6 @@
 .hero-text,
 .about-intro p,
 .contact-card p,
-.case-subtitle,
 .section-heading p,
 .supporting-text,
 .timeline p,
@@ -737,40 +727,9 @@
 /* Alias to keep compatibility with previous name */
 .mark.inverse { display: inline-block; }
 
-.metric-card .card-body {
-  display: block;
-}
-
-.metric-card .card-icon {
-  font-family: 'Material Icons';
-  font-size: 22px;
-  color: var(--accent);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  padding: 8px;
-  background: rgba(124,110,255,0.08);
-  border-radius: 8px;
-}
-
-.metric-card h3 {
-  font-size: 1.8rem;
-  color: var(--accent);
-}
-
 .metric-card.large h3 {
   font-size: 2.2rem;
   margin: 0 0 4px;
-}
-
-.metric-card.with-icon {
-  display: flex;
-  align-items: baseline;
-  column-gap: 16px;
-  flex-wrap: wrap;
-  align-content: flex-start;
 }
 
 .metric-card.with-icon2 {
@@ -781,7 +740,6 @@
   align-content: flex-start;
 }
 
-.metrics-grid,
 .timeline,
 .feature-grid,
 .outcomes-grid {
@@ -1108,14 +1066,8 @@ body.has-cursor,
 body.has-cursor a,
 body.has-cursor button { cursor: none; }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 @media (max-width: 920px) {
   .about-intro,
-  .case-hero,
   .contact-card,
   .cv-grid,
   .two-col {
@@ -1123,7 +1075,6 @@ img {
   }
 
   .work-grid,
-  .metrics-grid,
   .feature-grid,
   .comparison-grid,
   .outcomes-grid {

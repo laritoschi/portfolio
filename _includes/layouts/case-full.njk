@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+---
+
+<a class="link" href="{{ '/cases' | keepLang }}">
+  <span aria-hidden="true">←</span>
+  <span>{{ 'caseFull.btn.back' | t }}</span>
+</a>
+
+<section class="case-hero">
+  <div>
+    <h5>{{ 'caseFull.page.eyebrow' | t }}</h5>
+    <h1>{{ pageTitle }}</h1>
+    <p class="case-subtitle">{{ pageDescription }}</p>
+  </div>
+
+  <div class="fw-center">
+    {% heroVisual pageImage %}
+  </div>
+</section>
+
+{% if pageMetrics %}
+  {% metricsGrid pageMetrics %}
+{% endif %}
+
+<br /><br />
+
+<article class="full-case">
+  {{ content | safe }}
+</article>
+
+<div class="footer-btn">
+  <a class="btn primary" href="{{ '/contact' | keepLang}}">{{ 'caseFull.btn.contact' | t }}</a>
+  <a class="btn secondary" href="{{ '/cases' | keepLang }}">{{ 'caseFull.btn.more' | t }}</a>
+</div>

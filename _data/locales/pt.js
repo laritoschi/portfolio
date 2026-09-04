@@ -26,5 +26,10 @@ export default {
 
   'cases.page.label': 'Cases de estudo',
   'cases.page.title': 'Trabalhos selecionados na interseção entre clareza, estratégia e crescimento mensurável.',
-  'cases.page.text': 'Cada projeto explora um desafio diferente de produto, desde redesign de onboarding até dashboards focados em dados e ferramentas operacionais.'
+  'cases.page.text': 'Cada projeto explora um desafio diferente de produto, desde redesign de onboarding até dashboards focados em dados e ferramentas operacionais.',
+
+  'caseFull.btn.back': 'Todos os cases',
+  'caseFull.page.eyebrow': 'Resumo do case',
+  'caseFull.btn.contact': 'Vamos conversar',
+  'caseFull.btn.more': 'Veja outros cases',
 }

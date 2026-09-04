@@ -1,15 +1,17 @@
 :root {
   --font-base: 'Overpass', sans-serif;
   --font-brand: "Croissant One", serif;
+  --font-icon: "Material Icons";
 
   --color-text: #171717;
   --color-bg: #f5f4f1;
-  --color-bg-translucent: rgba(255,255,255,0.7);
+  --color-bg-translucent: rgba(255, 255, 255, 0.7);
   --color-bg-pill: rgba(236, 192, 236, 0.301);
   --color-bg-pill2: rgba(124, 110, 255, 0.12);
   --color-muted: #5f5b56;
   --color-border: rgba(23, 23, 23, 0.1);
   --color-border2: rgba(23, 23, 23, 0.2);
+  --color-border3: rgba(255, 255, 255, 0.8);
   --color-accent1: #e782a9;
   --color-accent2: #b42e5b;
   --color-accent3: #e6a121;

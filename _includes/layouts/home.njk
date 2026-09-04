@@ -13,22 +13,12 @@ header: home
     <br/>
 
     <div class="hero-actions">
-      <a class="btn primary" href="/cases">{{ 'home.hero.btn.cases' | t }}</a>
-      <a class="btn secondary" href="/contact">{{ 'home.hero.btn.contact' | t }}</a>
+      <a class="btn primary" href="{{ '/cases' | keepLang }}">{{ 'home.hero.btn.cases' | t }}</a>
+      <a class="btn secondary" href="{{ '/contact' | keepLang }}">{{ 'home.hero.btn.contact' | t }}</a>
     </div>
   </div>
 
-  <div class="hero-visual" aria-hidden="true">
-    <div class="mock-browser">
-      <div class="mock-browser-top">
-        <span></span> <span></span> <span></span>
-      </div>
-      <div class="mock-browser-body">
-        <div class="mock-card large"> 
-        </div>
-      </div>
-    </div>
-  </div>
+  {% heroVisual '', true %}
 </section>
 
 <section class="about-teaser">
@@ -40,7 +30,7 @@ header: home
   <div class="about-text">
     <p>{{ 'home.about.text' | t }}</p>
     <br/>
-    <a class="link" href="/about">{{ 'home.about.link' | t }}</a>
+    <a class="link" href="{{ '/about' | keepLang }}">{{ 'home.about.link' | t }}</a>
   </div>
 </section>
 
@@ -50,7 +40,7 @@ header: home
       <h5>{{ 'home.featured.label' | t }}</h5>
       <h2>{{ 'home.featured.title' | t }}</h2>
     </div>
-    <a class="link" href="/cases">{{ 'home.featured.link' | t }}</a>
+    <a class="link" href="{{ '/cases' | keepLang }}">{{ 'home.featured.link' | t }}</a>
   </div>
   
   <div class="featured-grid">
@@ -80,5 +70,5 @@ header: home
     <h4>{{ 'home.contact.title' | t }}</h4>
   </div>
 
-  <a class="btn primary" href="/contact">{{ 'home.contact.link' | t }}</a>
+  <a class="btn primary" href="{{ '/contact' | keepLang }}">{{ 'home.contact.link' | t }}</a>
 </section>

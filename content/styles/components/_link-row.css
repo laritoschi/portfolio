@@ -1,0 +1,30 @@
+@import '../_variables.css';
+
+.link-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+  width: auto-fill;
+
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+  }
+
+  a {
+    color: var(--color-accent2);
+    background: var(--color-surface);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: var(--shadow);
+      color: var(--color-accent2);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+  }
+}
