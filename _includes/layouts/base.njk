@@ -10,7 +10,7 @@ allLang:
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ metaTitle }}{{ ' - ' if metaTitle }}{{ metadata.title }}</title>
+    <title>{{ metaTitle }}{{ ' | ' if metaTitle }}{{ metadata.title }}</title>
     <meta
       name="description"
       content="{{ metadata.description }}"
@@ -31,7 +31,7 @@ allLang:
         <a class="brand" href="{{ '/' | keepLang }}">Lari Toschi</a>
 
         <nav class="site-nav" aria-label="Primary navigation">
-          {% for item in navigation.header %}
+          {% for item in navigation %}
             <a href="{{ item.url | keepLang }}" class="link-nav {{ "active" if header == item.id }}">{{ ['header.nav.', item.id] | join | t }}</a>
           {% endfor %}
 

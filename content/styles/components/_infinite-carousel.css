@@ -1,0 +1,51 @@
+@import '../_variables.css';
+@import '../_animation.css';
+
+.infinite-carousel-label {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  margin-bottom: 2px;
+}
+
+.infinite-carousel {
+  --height: 48px;
+  --width: 60px;
+  --duration: 40s;
+  --visible: 12;
+
+  display: flex;
+  overflow: hidden;
+  mask: 
+    linear-gradient(90deg,#0000, #000 10% 90%,#0000);
+
+  border: 1px solid var(--color-border4);
+  padding-block: 14px;
+  margin: 32px auto;
+  margin-top: 8px;
+
+  &:hover {
+    .infinite-cell {
+      animation-play-state: paused
+    }
+  }
+
+  .infinite-cell {
+    width: var(--width);
+    height: var(--height);
+    offset: shape(from calc(var(--width)/-2) 50%,hline by calc(sibling-count()*max(100%/var(--visible),var(--width) + 10px)));
+    animation: x var(--duration) linear infinite calc(-1*sibling-index()*var(--duration)/sibling-count());
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

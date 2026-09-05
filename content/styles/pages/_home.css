@@ -1,6 +1,6 @@
 @import '../_variables.css';
 
-.hero {
+.home-hero {
   display: grid;
   gap: 32px;
   align-items: center;

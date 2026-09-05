@@ -2,7 +2,6 @@ export default {
   'header.nav.home': 'Home',
   'header.nav.cases': 'Case Studies',
   'header.nav.about': 'About (CV)',
-  'header.nav.contact': 'Contact',
 
   'home.hero.eyebrow': 'Product Designer • Service Design • Visual & UI Design',
   'home.hero.title': 'Hi, I\'m Lari!',
@@ -32,4 +31,20 @@ export default {
   'caseFull.page.eyebrow': 'Case summary',
   'caseFull.btn.contact': 'Let\'s talk',
   'caseFull.btn.more': 'Read other cases',
+
+  'about.hero.eyebrow': 'Product Designer • Service Design • Visual & UI Design',
+  'about.hero.title1': 'From interface details to high-level strategy,',
+  'about.hero.title2': 'I navigate product complexity with whimsy 𖹭',
+  'about.hero.text': 'end-to-end UX/UI solutions for complex products ✷ from discovery to delivery',
+  'about.hero.available': 'Available for contract and full time roles',
+  'about.hero.cv': 'Download CV',
+  'about.hero.linkedin': 'Go to LinkedIn',
+  'about.profile.title': 'Find me (almost) everywhere',
+  'about.profile.location': 'Taubaté, SP, Brazil',
+  'about.profile.remote': 'Remotely working worldwide, portuguese native and english fluent',
+  'about.profile.social': 'Let\'s talk!',
+  'about.contact.email': 'E-mail',
+  'about.contact.phone': 'Phone',
+  'about.contact.linkedin': 'LinkedIn',
+  'about.cv.linkedin': 'Read more details in my LinkedIn',
 }

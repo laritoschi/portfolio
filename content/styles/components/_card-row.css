@@ -9,6 +9,10 @@
   margin-top: 18px;
   margin-bottom: 18px;
 
+  @media (max-width: 920px) {
+    grid-template-columns: 1fr;
+  }
+
   div {
     background: var(--color-surface3);
     border: 1px solid var(--color-surface2);

@@ -3,7 +3,7 @@ layout: layouts/base.njk
 header: home
 ---
 
-<section class="hero">
+<section class="home-hero">
   <div>
     <h5>{{ 'home.hero.eyebrow' | t }}</h5>
     <h1>{{ 'home.hero.title' | t }}</h1>
@@ -14,7 +14,7 @@ header: home
 
     <div class="hero-actions">
       <a class="btn primary" href="{{ '/cases' | keepLang }}">{{ 'home.hero.btn.cases' | t }}</a>
-      <a class="btn secondary" href="{{ '/contact' | keepLang }}">{{ 'home.hero.btn.contact' | t }}</a>
+      <a class="btn secondary" href="{{ '/about' | keepLang }}">{{ 'home.hero.btn.contact' | t }}</a>
     </div>
   </div>
 
@@ -70,5 +70,5 @@ header: home
     <h4>{{ 'home.contact.title' | t }}</h4>
   </div>
 
-  <a class="btn primary" href="{{ '/contact' | keepLang }}">{{ 'home.contact.link' | t }}</a>
+  <a class="btn primary" href="{{ '/about' | keepLang }}">{{ 'home.contact.link' | t }}</a>
 </section>

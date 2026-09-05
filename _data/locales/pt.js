@@ -2,7 +2,6 @@ export default {
   "header.nav.home": 'Home',
   "header.nav.cases": 'Cases',
   "header.nav.about": 'Sobre (CV)',
-  "header.nav.contact": 'Contato',
 
   'home.hero.eyebrow': 'Designer de Produto • UX Research • UI Design',
   'home.hero.title': 'Olá, sou a Lari!',
@@ -32,4 +31,20 @@ export default {
   'caseFull.page.eyebrow': 'Resumo do case',
   'caseFull.btn.contact': 'Vamos conversar',
   'caseFull.btn.more': 'Veja outros cases',
+
+  'about.hero.eyebrow': 'Designer de Produto • UX Research • UI Design',
+  'about.hero.title1': 'Do detalhe da interface à estratégia de alto nível,',
+  'about.hero.title2': 'navego pela complexidade do produto com uma perspectiva multidisciplinar.',
+  'about.hero.text': 'soluções de UX/UI end-to-end para produtos complexos ✷ do discovery até a entrega',
+  'about.hero.available': 'Disponível para projetos e vagas full time',
+  'about.hero.cv': 'Baixe meu currículo',
+  'about.hero.linkedin': 'Veja meu LinkedIn',
+  'about.profile.title': 'Me encontre (quase) em todos os lugares',
+  'about.profile.location': 'Taubaté, SP, Brasil',
+  'about.profile.remote': 'Trabalho remotamente no mundo inteiro, português como nativo e inglês fluente',
+  'about.profile.social': 'Vamos conversar!',
+  'about.contact.email': 'E-mail',
+  'about.contact.phone': 'WhatsApp',
+  'about.contact.linkedin': 'LinkedIn',
+  'about.cv.linkedin': 'Veja mais detalhes no meu LinkedIn',
 }

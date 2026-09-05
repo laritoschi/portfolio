@@ -442,11 +442,10 @@
   width: 24px;
   height: 24px;
   padding: 0;
-  border: 1px solid rgba(95, 91, 86, 0.22);
+  border: 1px solid var(--color-muted);
   border-radius: 6px;
   background: transparent;
-  color: var(--muted);
-  cursor: pointer;
+  color: var(--color-muted);
 }
 
 .copy-button:hover,

@@ -1,4 +1,4 @@
-import { removeHtmlWhitespace } from '../_utils/whitespace.util.js';
+import { removeHtmlWhitespace } from '../utils/whitespace.util.js';
 
 export default function(links) {
   const linksHtml = links.map((link) => `

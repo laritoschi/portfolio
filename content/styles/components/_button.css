@@ -28,4 +28,10 @@
   &:hover {
     box-shadow: var(--shadow-extra);
   }
+
+  .icon {
+    font-family: var(--font-icon);
+    font-size: 18px;
+    margin-right: 8px;
+  }
 }

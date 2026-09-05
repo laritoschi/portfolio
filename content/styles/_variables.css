@@ -12,6 +12,7 @@
   --color-border: rgba(23, 23, 23, 0.1);
   --color-border2: rgba(23, 23, 23, 0.2);
   --color-border3: rgba(255, 255, 255, 0.8);
+  --color-border4: rgba(42, 31, 65, 0.14);
   --color-accent1: #e782a9;
   --color-accent2: #b42e5b;
   --color-accent3: #e6a121;
@@ -19,6 +20,7 @@
   --color-surface2: #f2efe8;
   --color-surface3: rgba(255, 255, 255, 0.82);
   --color-muted-extra: #9c9994;
+  --color-available: #62bd19;
 
   --shadow: 0 20px 40px rgba(23, 23, 23, 0.08);
   --shadow-extra: 0 28px 60px rgba(23, 23, 23, 0.12);

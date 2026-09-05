@@ -1,8 +1,0 @@
-{
-  "header": [
-    { "id": "home", "url": "/" },
-    { "id": "cases", "url": "/cases" },
-    { "id": "about", "url": "/about" },
-    { "id": "contact", "url": "/contact" }
-  ]
-}
