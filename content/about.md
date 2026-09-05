@@ -74,7 +74,7 @@ companies:
     alt: Blip
 ---
 
-<!--section:beforeContact-->
+<!--section:beforeLinkedin-->
 
 ## 5+ years designing complex B2B SaaS products
 My path into product design started at the Universidade de São Paulo (USP), studying Architecture & Urban Planning alongside coursework in Computer Science. Designing physical structures taught me systemic thinking and spatial flow, while computing gave me technical logic. Today, I bring that exact hybrid perspective to solve unstructured B2B challenges.
@@ -118,14 +118,6 @@ I dont treat delivery as the end of the process. I validate with data, using met
 
 <br /><br />
 
-## Let's build together?
-
-Whether it’s a product strategy conversation, a design leadership discussion, or a collaboration opportunity, I’d love to hear from you.
-
-<!--section:afterContact-->
-
-<br /><br />
-
 ## Past experiences
 {% infiniteCarousel companies, '', 56, 118, 80, 6 %}
 
@@ -161,3 +153,11 @@ Facilitated Lean Inceptions and Teresa Torres' Opportunity Trees to validate e-c
 ##### Feb 2022 — Nov 2022
 
 Designed consumption and billing dashboards for financial back-office; post-launch achieved a +3,500% MAU growth, 80% retention rate, and 82 SUS score.
+
+<!--section:beforeContact-->
+
+## Let's build together?
+
+Whether it’s a product strategy conversation, a design leadership discussion, or a collaboration opportunity, I’d love to hear from you.
+
+<!--section:afterContact-->

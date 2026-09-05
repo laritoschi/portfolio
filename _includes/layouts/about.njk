@@ -61,6 +61,14 @@ linkButtons:
 </section>
 
 <section class="about-content">
+  {{ content | section('beforeLinkedin') | safe }}
+
+  <br />
+  <a class="btn secondary" target="_blank" href="{{ metadata.linkedin }}">
+    <span class="icon">open_in_new</span> {{ 'about.cv.linkedin' | t }}
+  </a>
+  <br /><br /><br />
+
   {{ content | section('beforeContact') | safe }}
 
   <div class="contact-card">
@@ -83,10 +91,8 @@ linkButtons:
 
   {{ content | section('afterContact') | safe }}
 
-  <br />
-  <a class="btn secondary" target="_blank" href="{{ metadata.linkedin }}">
-    <span class="icon">open_in_new</span> {{ 'about.cv.linkedin' | t }}
-  </a>
+  <br /><br />
+  
 </section>
 
 <script src="/assets/scripts/copy.js"></script>
